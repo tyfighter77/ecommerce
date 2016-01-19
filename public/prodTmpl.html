@@ -1,0 +1,12 @@
+<h1> This is the product page </h1>
+
+<p> products go here </p>
+
+<div ng-repeat="product in products">
+  <br/>
+  {{product.title}}
+  <button ng-click="getProd(product._id)">Details</button>
+</div>
+<br/>
+<br/>
+{{product[0].title}} {{product[0].price}}
