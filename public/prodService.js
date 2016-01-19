@@ -15,13 +15,14 @@ angular.module("eCommerceApp").service("prodService", function($http) {
       return response.data;
     });
   };
-  this.createProd = function(createTitle, createPrice) {
+  this.createProd = function(createTitle, createPrice, createImg) {
     return $http({
       method: 'POST',
       url: 'http://localhost:3000/products/',
       data: {
         title: createTitle,
-        price: createPrice
+        price: createPrice,
+        img: createImg
       }
     }).then(function(response) {
       return response.data;

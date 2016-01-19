@@ -17,8 +17,8 @@ angular.module('eCommerceApp')
         });
     };
 
-    $scope.createProd = function(createTitle, createPrice) {
-      prodService.createProd(createTitle, createPrice)
+    $scope.createProd = function(createTitle, createPrice, createImg) {
+      prodService.createProd(createTitle, createPrice, createImg)
         .then(function(response) {
           $scope.getProds();
         });
@@ -41,5 +41,5 @@ angular.module('eCommerceApp')
         $scope.getProds();
       });
     };
-    
+
   });

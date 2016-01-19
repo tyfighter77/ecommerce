@@ -1,12 +1,15 @@
-<h1> This is the product page </h1>
+<h1> Our Products </h1>
 
-<p> products go here </p>
+<p> Buy them now! </p>
 
-<div ng-repeat="product in products">
+<div class="wrapper">
+  <div ng-repeat="product in products">
+    <br/>
+    <div class="imageBox"><img src="{{product.img}}" /></div>
+    {{product.title}} {{product.price}}
+    <!-- <button ng-click="getProd(product._id)">Details</button> -->
+  </div>
   <br/>
-  {{product.title}}
-  <button ng-click="getProd(product._id)">Details</button>
+  <br/>
+  <!-- {{product[0].title}} {{product[0].price}} -->
 </div>
-<br/>
-<br/>
-{{product[0].title}} {{product[0].price}}
