@@ -21,7 +21,6 @@
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "express-session": "^1.13.0",
-    "mongodb": "^2.1.4",
-    "mongojs": "^2.3.0"
+    "mongoose": "^4.3.6"
   }
 }

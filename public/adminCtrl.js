@@ -41,10 +41,5 @@ angular.module('eCommerceApp')
         $scope.getProds();
       });
     };
-
-
-
-
-
-
+    
   });
