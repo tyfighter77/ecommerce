@@ -11,8 +11,10 @@
   <div ng-repeat="product in products">
     <br/>
     <div class="imageBox"><img src="{{product.img}}" /></div>
-    {{product.title}} {{product.price}}
+    <br/>
+    <div class="label">{{product.title}} {{product.price}}</div><br/>
     <button ng-click="edit = !edit">Edit</button>
+
     <form ng-if="edit">
       <input type="text" ng-model="product.title">
       <input type="text" ng-model="product.price">

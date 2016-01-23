@@ -3,13 +3,18 @@ angular.module('eCommerceApp', ['ui.router'])
   $stateProvider
     .state('products', {
       url: '/products',
-      templateUrl: './prodTmpl.html',
+      templateUrl: './views/prodTmpl.html',
       controller: 'mainCtrl'
     })
     .state('admin', {
       url: '/admin',
-      templateUrl: './adminTmpl.html',
+      templateUrl: './views/adminTmpl.html',
       controller: 'adminCtrl'
+    })
+    .state('login', {
+      url: '/login',
+      templateUrl: './views/login.html',
+      controller: 'loginCtrl'
     });
-    $urlRouterProvider.otherwise('/products');
+    $urlRouterProvider.otherwise('/login');
 });

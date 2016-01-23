@@ -19,6 +19,11 @@ p {
   font-style: italic;
 }
 
+.label {
+  line-height: 50px;
+  display: inline-block;
+}
+
 .wrapper {
   display: inline-block;
   width: 80%;
@@ -28,6 +33,7 @@ input {
   margin: 20px 0;
   height: 26px;
   width: 150px;
+  border-radius: 8px;
   font-size: 22px;
   text-align: center;
   color: #28524a;
@@ -35,6 +41,7 @@ input {
 
 button {
   height: 32px;
+  width: 100px;
   border-radius: 8px;
   line-height: 32px;
   background: #28524a;
@@ -42,9 +49,19 @@ button {
   padding: 0 10px;
 }
 
+.imageBox {
+  display: inline-block;
+  border: 3px solid #28524a;
+  background: white;
+  border-radius: 8px;
+  height: 110px;
+  width: 110px;
+}
+
 .imageBox img{
-    display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   max-width: 100px;
   max-height: 100px;
-  border: 5px solid #28524a;
 }
